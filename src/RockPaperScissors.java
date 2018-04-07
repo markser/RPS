@@ -51,6 +51,7 @@ public class RockPaperScissors {
     /**
      * Function that determines the winner of the match
      * You must use if statements to successfully program this function
+     * https://www.javatpoint.com/java-if-else
      *
      * @param computer computer's input
      * @param user     user's input
@@ -94,6 +95,7 @@ public class RockPaperScissors {
     /**
      * Function that retrieves the user's choice of Rock, Paper, or Scissors.
      * Uses Java Scanner Function to retrieve input through console.
+     * https://www.javatpoint.com/Scanner-class
      *
      * @return User's choice
      */
