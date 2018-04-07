@@ -5,10 +5,14 @@ import java.util.Scanner;
  * A program modeled after the popular game: Rock, Paper, Scissors.
  * The provided code is incomplete. Modify it so that it works properly
  * When you are done, consider making additional changes
+ * <p>
  * 1. Create Rock, Paper, Scissors, Lizard, Spock.
  * https://www.youtube.com/watch?v=cSLeBKT7-sM
- * 2. Have the program battle 2 computers. Hint, you will need to remove the userChoice() function.
+ * <p>
+ * 2. Have the program battle 2 computers. Hint, you will need to do something with String user = userChoice();
+ * <p>
  * 3. Create a scoreboard so you know who is winning. Hint, you will need to use variables.
+ * <p>
  * 4. Let your mind wander and explore what Java has to offer.
  */
 
