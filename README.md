@@ -28,7 +28,5 @@ The user has the choice to continue or terminate the game with y or n.
 
 ## Feedback
 
-Do you love this game? Anything you didn't like? Any bugs or feature request?
-
 Please contact me! mser2@illinois.edu
 
