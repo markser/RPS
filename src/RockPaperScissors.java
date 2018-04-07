@@ -50,7 +50,7 @@ public class RockPaperScissors {
 
     /**
      * Function that determines the winner of the match
-     * You must use if, else if, and else statements to successfully program this function
+     * You must use if statements to successfully program this function
      *
      * @param computer computer's input
      * @param user     user's input
@@ -61,7 +61,7 @@ public class RockPaperScissors {
         System.out.println("Your Choice: " + user);
 
         // Write your code here
-        // EX: 
+        // EX:
         // if (computer.equals("Rock") && user.equals("Scissors"))
         // {
         // System.out.println("Computer wins! Better luck next time!");
