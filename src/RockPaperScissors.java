@@ -39,14 +39,12 @@ public class RockPaperScissors {
         Random rand = new Random();
         int computerChoice = rand.nextInt(3) + 1;
         String computer = "";
-
-        // You Code Here
-//        if (computerChoice == 1)
-//            computer = "Rock";
-//        if (computerChoice == 2)
-//            computer = "Paper";
-//        if (computerChoice == 3)
-//            computer = "Scissors";
+        if (computerChoice == 1)
+            computer = "Rock";
+        if (computerChoice == 2)
+            computer = "Paper";
+        if (computerChoice == 3)
+            computer = "Scissors";
         return computer;
     }
 
@@ -63,33 +61,13 @@ public class RockPaperScissors {
         System.out.println("Your Choice: " + user);
 
         // Write your code here
+        // EX: 
+        // if (computer.equals("Rock") && user.equals("Scissors"))
+        // {
+        // System.out.println("Computer wins! Better luck next time!");
+        //}
 
-//        if (computer.equals("Rock") && user.equals("Scissors")) {
-//
-//            System.out.println("Computer wins! Better luck next time!");
-//        }
-//        if (computer.equals("Scissors") && user.equals("Paper")) {
-//
-//            System.out.println("Computer wins! Better luck next time!");
-//        }
-//        if (computer.equals("Paper") && user.equals("Rock")) {
-//
-//            System.out.println("Computer wins! Better luck next time!");
-//        }
-//        if (computer.equals("Rock") && user.equals("Paper")) {
-//
-//            System.out.println("You win!!");
-//        }
-//        if (computer.equals("Scissors") && user.equals("Rock")) {
-//
-//            System.out.println("You win!!");
-//        }
-//        if (computer.equals("Paper") && user.equals("Scissors")) {
-//
-//            System.out.println("You win!!");
-//        } else if (computer.equals(user)) {
-//            System.out.println("Tie! the game must be played again.");
-//        }
+
     }
 
     /**
@@ -124,7 +102,7 @@ public class RockPaperScissors {
 
         String user;
         do {
-            System.out.println("Choose your weapon (Rock, Paper, or Scissors)");
+            System.out.println("Choose your weapon: Rock, Paper, or Scissors");
             user = sc.nextLine();
         } while (!isValidChoice(user));
         return user;
