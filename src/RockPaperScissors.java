@@ -15,18 +15,29 @@ import java.util.Scanner;
  * <p>
  * 4. Let your mind wander and explore what Java has to offer.
  */
-
 public class RockPaperScissors {
+
+    /**
+     * Scanner allows you to take inputs from the console.
+     * Read more here https://www.javatpoint.com/Scanner-class
+     */
+
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+
         play();
         while (playAgain()) {
             play();
         }
     }
 
+    /**
+     * Groups up the required functions to clean up the main function.
+     */
+
     public static void play() {
+
         String computer = computerChoice();
         String user = userChoice();
         determineWinner(computer, user);
@@ -39,7 +50,9 @@ public class RockPaperScissors {
      * @return the computer's choice
      */
 
+    
     public static String computerChoice() {
+
         Random rand = new Random();
         int computerChoice = rand.nextInt(3) + 1;
         String computer = "";
@@ -84,13 +97,16 @@ public class RockPaperScissors {
      */
 
     public static boolean playAgain() {
-        System.out.println("Play again?(y/n)");
+
+        System.out.println("Play again? (y/n)");
         String input = sc.nextLine();
         if (input.toLowerCase().equals("y")) {
             return true;
         } else if (input.toLowerCase().equals("n")) {
             return false;
         } else {
+            //Uses the idea of Recursion.
+            //Learn more here https://introcs.cs.princeton.edu/java/23recursion/
             System.out.println("Invalid Input");
             return playAgain();
         }
@@ -106,12 +122,12 @@ public class RockPaperScissors {
 
     public static String userChoice() {
 
-        String user;
+        String userInput;
         do {
             System.out.println("Choose your weapon: Rock, Paper, or Scissors");
-            user = sc.nextLine();
-        } while (!isValidChoice(user));
-        return user;
+            userInput = sc.nextLine();
+        } while (!isValidChoice(userInput));
+        return userInput;
     }
 
     /**
@@ -123,6 +139,7 @@ public class RockPaperScissors {
      */
 
     public static boolean isValidChoice(String choice) {
+
         boolean status;
         if (choice.equals("Rock"))
             status = true;
