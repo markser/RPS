@@ -50,7 +50,7 @@ public class RockPaperScissors {
      * @return the computer's choice
      */
 
-    
+
     public static String computerChoice() {
 
         Random rand = new Random();
@@ -63,29 +63,6 @@ public class RockPaperScissors {
         if (computerChoice == 3)
             computer = "Scissors";
         return computer;
-    }
-
-    /**
-     * Function that determines the winner of the match
-     * You must use if statements to successfully program this function
-     * https://www.javatpoint.com/java-if-else
-     *
-     * @param computer computer's input
-     * @param user     user's input
-     */
-    public static void determineWinner(String computer, String user) {
-
-        System.out.println("Computer Choice: " + computer);
-        System.out.println("Your Choice: " + user);
-
-        // Write your code here
-        // EX:
-        // if (computer.equals("Rock") && user.equals("Scissors"))
-        // {
-        // System.out.println("Computer wins! Better luck next time!");
-        //}
-
-
     }
 
     /**
@@ -152,5 +129,28 @@ public class RockPaperScissors {
             System.out.println("Error! Make sure you are capitalizing your choices");
         }
         return status;
+    }
+
+    /**
+     * Function that determines the winner of the match
+     * You must use if statements to successfully program this function
+     * https://www.javatpoint.com/java-if-else
+     *
+     * @param computer computer's input
+     * @param user     user's input
+     */
+    public static void determineWinner(String computer, String user) {
+
+        System.out.println("Computer Choice: " + computer);
+        System.out.println("Your Choice: " + user);
+
+        // Write your code here
+        // EX:
+        // if (computer.equals("Rock") && user.equals("Scissors"))
+        // {
+        // System.out.println("Computer wins! Better luck next time!");
+        //}
+
+
     }
 }
